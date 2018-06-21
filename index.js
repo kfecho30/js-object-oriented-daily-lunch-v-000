@@ -24,7 +24,7 @@ class Neighborhood {
   }
   meals(){
     return this.deliveries().map(delivery => {
-      return delivery.meal();
+      return delivery.meal().filter((value, index, self) => self.indexOf(value) === index);
     })
   }
 }
