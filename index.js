@@ -60,7 +60,7 @@ class Meal {
       return delivery.customer();
     })
   }
-  this.byPrice(){}
+  statis byPrice(){}
 }
 
 class Delivery {
