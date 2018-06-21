@@ -42,7 +42,7 @@ class Customer {
     })
   }
   totalSpent(){
-    this.meals().reduce((total, meal) => (total += meal.price), 0);
+    return this.meals().reduce((total, meal) => (total += meal.price), 0);
   }
 }
 
