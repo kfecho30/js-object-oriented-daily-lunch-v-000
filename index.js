@@ -11,11 +11,17 @@ class Neighborhood {
     this.name = name;
     this.id = ++neighborhoodId;
   }
-
+  deliveries(){}
+  customers(){}
+  meals(){}
 }
 
 class Customer {
-
+  constructor(name, neighborhoodId){
+    this.name = name;
+    this.id = ++customerId;
+    this.neighborhoodId = neighborhoodId;
+  }
 }
 
 class Meal {
