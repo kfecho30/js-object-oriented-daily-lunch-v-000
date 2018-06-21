@@ -41,6 +41,9 @@ class Customer {
       return delivery.meal()
     })
   }
+  totalSpent(){
+    this.meals.price
+  }
 }
 
 class Meal {
