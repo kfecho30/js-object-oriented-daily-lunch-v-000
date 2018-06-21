@@ -36,7 +36,11 @@ class Customer {
       return delivery.customerId === this.id;
     })
   }
-  meals(){}
+  meals(){
+    return store.meals.filter(meal => {
+      return meals.customerId === this.id;
+    })
+  }
 }
 
 class Meal {
@@ -45,6 +49,16 @@ class Meal {
     this.price = price;
     this.id = ++mealId;
     store.meals.push(this);
+  }
+  deliveries(){
+    return store.deliveries.filter(delivery => {
+      return delivery.mealId === this.id;
+    })
+  }
+  customers(){
+    return store.customers.filter(customer => {
+      return customer.melaId === this.id;
+    })
   }
 }
 
