@@ -43,4 +43,9 @@ class Delivery {
     this.id = ++deliveryId;
     store.deliveries.push(this);
   }
+  meal(){
+    return store.meals.find(meal =>{
+      return meal.id === this.mealId;
+    })
+  }
 }
