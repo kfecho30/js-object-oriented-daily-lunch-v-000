@@ -42,7 +42,7 @@ class Customer {
     })
   }
   totalSpent(){
-    this.meals.price.reduce();
+    this.meals().price.reduce();
   }
 }
 
