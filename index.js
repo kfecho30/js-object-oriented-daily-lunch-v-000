@@ -37,8 +37,8 @@ class Customer {
     })
   }
   meals(){
-    return store.meals.map(meal => {
-      return meals.customerId === this.id;
+    return this.deliveries.map(delivery => {
+      return delivery.meal()
     })
   }
 }
